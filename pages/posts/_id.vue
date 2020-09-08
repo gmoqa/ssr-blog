@@ -1,12 +1,13 @@
 <template>
-  <div class="columns">
-    <div class="column is-9">
-      <section class="section">
-        <h1 class="title">{{ post.title }}</h1>
-        <hr />
-        <p>{{ post.body }}</p>
-      </section>
-    </div>
+  <div class="post">
+    <h1 class="name">
+      SSR Blog
+      <span style="font-size: 18px; color: #4cb96d">| with Nuxt.js</span>
+    </h1>
+    <hr />
+    <h1 class="title">{{ post.title }}</h1>
+    <hr />
+    <p class="body">{{ post.body }}</p>
   </div>
 </template>
 

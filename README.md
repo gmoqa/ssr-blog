@@ -1,6 +1,8 @@
-# blog-ssr
+# Server side rendering blog
 
-## Build Setup
+## Built with Nuxt.js
+
+[Demo URL](https://ssr-blog-nuxt-js.herokuapp.com/)
 
 ```bash
 # install dependencies
@@ -16,5 +18,3 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
