@@ -1,8 +1,11 @@
 <template>
   <div>
-    <h1 class="name">SSR Blog</h1>
+    <h1 class="name">
+      SSR Blog
+      <span style="font-size: 18px; color: #4cb96d">| with Nuxt.js</span>
+    </h1>
     <hr />
-    <div v-for="post in posts" :key="post.id">
+    <div v-for="post in posts" :key="post.id" class="post">
       <nuxt-link
         class="title"
         :to="{ name: 'posts-id', params: { id: post.id } }"
@@ -33,13 +36,19 @@ export default {
 <style>
 .name {
   font-size: 35px;
-  color: #363636;
+  color: whitesmoke;
   font-weight: 900;
 }
 
 .title {
   font-size: 25px;
-  color: #363636;
+  color: whitesmoke;
   font-weight: 900;
+  text-decoration: none;
+}
+
+.post {
+  margin-top: 20px;
+  color: whitesmoke;
 }
 </style>
