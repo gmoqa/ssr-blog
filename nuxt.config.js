@@ -50,7 +50,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['~/modules/helmet'],
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
