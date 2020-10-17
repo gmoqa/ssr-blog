@@ -50,7 +50,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['~/modules/helmet'],
+  modules: ['~/modules/security-headers'],
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
@@ -59,5 +59,13 @@ export default {
   /**
    * Loading
    */
-  loading: false,
+  loading: true,
+  /**
+   * Server for GCP / Heroku
+   */
+  server: {
+    port: 3000,
+    host: '0.0.0.0',
+    timing: false
+  }
 }
